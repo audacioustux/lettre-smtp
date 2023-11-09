@@ -1,0 +1,5 @@
+version: "3"
+
+tasks:
+  default: task --list-all
+  api:build-image: pack build tanjim/lettre-smtp --publish -b docker.io/paketocommunity/rust -B paketobuildpacks/builder-jammy-base
